@@ -1,4 +1,4 @@
-# Zoho Cliq Chat Data Archival Project
+#Chat Data Archival Project
 
 This project provides a database schema design for handling massive chat data in MySQL, along with a Java-based tool to archive historical messages using database partitioning and the `EXCHANGE PARTITION` mechanism.
 
