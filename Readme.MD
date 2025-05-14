@@ -232,7 +232,7 @@ The tool will connect to the database, perform the archival steps for the specif
 
 ###  Improvements Needed
 
-* **Automated Archival Scheduling**: Implement a mechanism (e.g., a background job or scheduled task) to automatically add new partition beforehand  (e.g., create next month or 3 month partition by alter query).
+* **Automated partition Scheduling**: Implement a mechanism (e.g., a background job or scheduled task) to automatically add new partition beforehand  (e.g., create next month or 3 month partition by alter query).
 * **Automated Archival Scheduling**: Implement a mechanism (e.g., a background job or scheduled task) to automatically identify and archive partitions based on a defined policy (e.g., archive all partitions older than X months).
 * **Comprehensive Search Layer**: Develop a dedicated data access layer or service that transparently queries both the live `messages` table and the relevant archive tables based on the metadata in `archived_message_partitions` when a historical search is performed.
 * **Optimized Archived Table Indices**: Analyze query patterns on archived data and potentially add more specific indices to the archive tables if the default indices inherited from `messages` are insufficient.
